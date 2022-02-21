@@ -1,11 +1,11 @@
 # Basic structure
 Dependency Injection Samples for Commandline for me learning this
 
-Basic application using Microsoft DI container.
+## Basic application using Microsoft DI container.
 
 Packages needed
-Microsoft.Extensions.DependencyInjection
-Microsoft.Extensions.Hosting
+Microsoft.Extensions.DependencyInjection 
+Microsoft.Extensions.Hosting 
 
 ```var host = CreateHostBuilder(args).Build();```
 
