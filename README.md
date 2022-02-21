@@ -24,7 +24,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 ```.AddSingleton<Application>();``` 
 
 This adds the Application class to DI container
-Sigleton, Scoped, Transient, in this case all are same as everthing will live for same lifetime as the program
+Sigleton, Scoped, Transient, in this case all are same as everything will live for same lifetime as the program
 
 ```
 var app = host.Services.GetService<Application>();
