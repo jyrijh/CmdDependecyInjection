@@ -32,3 +32,41 @@ app.Run();
 ```
 
 Gets the Application instance that DI has created and run it.
+
+
+## Basic configuration
+### appsettings.json
+```
+{
+  "Application": {
+    "StringSetting": "string value",
+    "IntSetting":  100
+  }
+}
+```
+
+And in Configuration folder class Application.cs
+```
+class Application
+{
+  public string StringSetting { get; set; }
+  public int IntSetting { get; set; }
+}
+```
+
+```services.Configure<Configuration.Application>(hostContext.Configuration.GetSection("Application"));```
+
+This is read by container and with ```hostContext.Configuration.GetSection("Application")``` we get named section from appsetting.json ```services.Configure<Configuration.Application>``` maps it object and adds it to container to be used by object that need it
+
+```
+Configuration.Application _settings;
+
+public Application(IOptions<Configuration.Application> settings)
+{
+  _settings = settings.Value;
+}
+```
+
+```public Application(IOptions<Configuration.Application> settings)``` 
+
+DI Container automatically injects needed objects when it creates our Application object
