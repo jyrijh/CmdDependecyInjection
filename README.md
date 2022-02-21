@@ -1,5 +1,5 @@
-# CmdDependecyInjection
-Dependency Injection Samples for Commandline
+# Basic structure
+Dependency Injection Samples for Commandline for me learning this
 
 Basic application using Microsoft DI container.
 
