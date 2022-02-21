@@ -19,7 +19,6 @@ namespace configuration_basic
                     services
                         .Configure<Configuration.Application>(hostContext.Configuration.GetSection("Application"));
 
-
                     services
                         .AddSingleton<Application>();
                 });
