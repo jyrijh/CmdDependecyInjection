@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Design;
+//using Microsoft.Extensions.Configuration;
 
 namespace DatabaseLibrary
 {
@@ -10,4 +12,15 @@ namespace DatabaseLibrary
             :base(options)
         { }
     }
+
+    //public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<DemoContext>
+    //{
+    //    public DemoContext CreateDbContext(string[] args)
+    //    {
+    //        var builder = new DbContextOptionsBuilder<DemoContext>();
+    //        var connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=TestDB;Trusted_Connection=True;";
+    //        builder.UseSqlServer(connectionString);
+    //        return new DemoContext(builder.Options);
+    //    }
+    //}
 }

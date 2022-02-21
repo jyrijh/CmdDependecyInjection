@@ -19,6 +19,7 @@ namespace DatabaseApp
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddDbContext<DatabaseLibrary.DemoContext>(options =>
+                        //options.UseSqlServer(hostContext.Configuration.GetConnectionString("DefaultConnection")));
                         options.UseInMemoryDatabase(hostContext.Configuration.GetConnectionString("DefaultConnection")));
                     
                     services
