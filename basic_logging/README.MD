@@ -13,8 +13,8 @@ Writes to TraceListener using Debug.WriteLine method, see [Debug.WriteLine](http
 
 You can use additional [third party providers](https://docs.microsoft.com/en-us/dotnet/core/extensions/logging-providers#third-party-logging-providers) to enchace logging.  
 
-To use logging add ```using Microsoft.Extensions.Logging;``` and ```ILogger<class>``` dependecy to you class.  
-```<class>``` in this is Log category, this can be arbitrary but convention is to use class name.  
+To use logging add ```using Microsoft.Extensions.Logging;``` and ```ILogger<class>``` dependecy to you class. ```<class>``` in this is also Log category.  
+This can be overridden by calling ```loggerFactory.CreateLogger("CustomCategory")``` in class constuctor (see [Category](https://docs.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line#log-category)).  
 This is used in logmessages ```basic_logging.Worker[0] Constructor called``` to provide catogory for the message.
 
 ```
