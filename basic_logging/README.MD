@@ -37,3 +37,15 @@ namespace basic_logging
     }
 }
 ```
+This will produce following output
+```
+info: basic_logging.Worker[0]
+      Constructor called
+info: basic_logging.Application[0]
+      Contructor called
+info: basic_logging.Application[0]
+      Run called
+info: basic_logging.Worker[0]
+      DoWork called with Hello from DI
+```
+
