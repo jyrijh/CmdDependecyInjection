@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basic", "basic\basic.csproj", "{3D915105-7058-4CC4-B1E6-53CDAC395F1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "basic", "basic\basic.csproj", "{3D915105-7058-4CC4-B1E6-53CDAC395F1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configuration_basic", "configuration_basic\configuration_basic.csproj", "{62717448-4A1D-4BED-A22C-48BD475F1149}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "configuration_basic", "configuration_basic\configuration_basic.csproj", "{62717448-4A1D-4BED-A22C-48BD475F1149}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{783B123A-29F2-4B05-8374-CF71E250683D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLibrary", "DatabaseLibrary\DatabaseLibrary.csproj", "{9305174B-75C3-45F5-B5C1-E944C53D9861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseLibrary", "DatabaseLibrary\DatabaseLibrary.csproj", "{9305174B-75C3-45F5-B5C1-E944C53D9861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseApp", "DatabaseApp\DatabaseApp.csproj", "{AEB4B56E-C56D-4D5A-8DEB-8DE4465C9F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseApp", "DatabaseApp\DatabaseApp.csproj", "{AEB4B56E-C56D-4D5A-8DEB-8DE4465C9F1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{666A3CA4-2003-4FBB-9EDF-21340BB9AF6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basic_logging", "basic_logging\basic_logging.csproj", "{EAE93614-7123-430D-99B4-C13C452D3D5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{AEB4B56E-C56D-4D5A-8DEB-8DE4465C9F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEB4B56E-C56D-4D5A-8DEB-8DE4465C9F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEB4B56E-C56D-4D5A-8DEB-8DE4465C9F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9305174B-75C3-45F5-B5C1-E944C53D9861} = {783B123A-29F2-4B05-8374-CF71E250683D}
 		{AEB4B56E-C56D-4D5A-8DEB-8DE4465C9F1C} = {783B123A-29F2-4B05-8374-CF71E250683D}
+		{EAE93614-7123-430D-99B4-C13C452D3D5A} = {666A3CA4-2003-4FBB-9EDF-21340BB9AF6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B8DB3DA-0C28-466A-BAC1-4ED542963937}
