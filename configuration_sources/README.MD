@@ -1,0 +1,32 @@
+# Configuration sources
+
+## appsettings.json
+In appsettings Worker has 3 settings
+```
+"Worker": {
+  "Setting1": "From appsetting.json",
+  "Setting2": "From appsetting.json",
+  "Setting3": "From appsetting.json"
+}
+```
+## Environment variables
+In environment variables the is Worker:Setting2 that has value "From environment variable"
+
+## Commandline
+From commandline we provide --Worker:Setting3="From commandline"
+
+open project folder in command line and run following commands
+```
+set Worker:Setting2=From environment variable
+dotnet run --Worker:Setting3="From commandline"
+```
+
+```
+StringSetting: string value
+IntSetting: 100
+Worker settings
+Setting1: From appsetting.json
+Setting2: From environment variable
+Setting3: From commandline
+```
+Setting2 has been overwritten by environment variable and Setting3 by commandline parameter
