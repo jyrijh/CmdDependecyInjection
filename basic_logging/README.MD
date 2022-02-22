@@ -13,7 +13,8 @@ Writes to TraceListener using Debug.WriteLine method, see [Debug.WriteLine](http
 
 You can use additional [third party providers](https://docs.microsoft.com/en-us/dotnet/core/extensions/logging-providers#third-party-logging-providers) to enchace logging.  
 
-To use logging add ```using Microsoft.Extensions.Logging;``` and ```ILogger<class>``` dependecy to you class
+To use logging add ```using Microsoft.Extensions.Logging;``` and ```ILogger<class>``` dependecy to you class.  
+```<class>``` in this is Log category, this can be arbitrary but convention is to use class name. This is used in logmessages ```basic_logging.Worker[0] Constructor called``` to provide catogory for the message.
 
 ```
 using Microsoft.Extensions.Logging;
@@ -49,3 +50,16 @@ info: basic_logging.Worker[0]
       DoWork called with Hello from DI
 ```
 
+## Configure logging
+You can configure logging using appsettins.json or in code. Appsettings is preferred way to do this
+```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  }
+}
+```
