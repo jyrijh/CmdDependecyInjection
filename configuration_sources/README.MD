@@ -13,7 +13,7 @@ In appsettings Worker has 3 settings
 In environment variables the is Worker:Setting2 that has value "From environment variable"
 
 ## Commandline
-From commandline we provide --Worker:Setting3="From commandline"
+From commandline we provide Worker:Setting3 with valeu "From commandline"
 
 open project folder in command line and run following commands
 ```
@@ -30,3 +30,10 @@ Setting2: From environment variable
 Setting3: From commandline
 ```
 Setting2 has been overwritten by environment variable and Setting3 by commandline parameter
+
+```
+Host.CreateDefaultBuilder(args)
+  .ConfigureServices((hostContext, services) =>
+  {
+```
+hostContext hash multiple Configuration Providers and later ones values override earliers values.
