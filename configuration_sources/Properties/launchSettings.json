@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "configuration_sources": {
+      "commandName": "Project",
+      "commandLineArgs": "--Worker:Setting2=\"From commandline\""
+    }
+  }
+}

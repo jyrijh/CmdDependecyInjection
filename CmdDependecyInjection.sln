@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseApp", "DatabaseApp\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{666A3CA4-2003-4FBB-9EDF-21340BB9AF6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basic_logging", "basic_logging\basic_logging.csproj", "{EAE93614-7123-430D-99B4-C13C452D3D5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "basic_logging", "basic_logging\basic_logging.csproj", "{EAE93614-7123-430D-99B4-C13C452D3D5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "configuration_sources", "configuration_sources\configuration_sources.csproj", "{CFF003FE-8B3D-49B8-9C3B-C21C56A64E1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE93614-7123-430D-99B4-C13C452D3D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF003FE-8B3D-49B8-9C3B-C21C56A64E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF003FE-8B3D-49B8-9C3B-C21C56A64E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF003FE-8B3D-49B8-9C3B-C21C56A64E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF003FE-8B3D-49B8-9C3B-C21C56A64E1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
