@@ -4,10 +4,16 @@ namespace basic
 {
     class Application
     {
+        Worker _worker;
+
+        public Application(Worker worker)
+        {
+            _worker = worker;
+        }
 
         public void Run()
         {
-            Console.WriteLine("Hello from DI");
+            _worker.DoWork("Hello from DI");
         }
     }
 }

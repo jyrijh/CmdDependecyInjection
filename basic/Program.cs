@@ -17,7 +17,8 @@ namespace basic
                 .ConfigureServices((hostContext, services) =>
                 {
                     services
-                        .AddSingleton<Application>();
+                        .AddSingleton<Application>()
+                        .AddSingleton<Worker>();
                 });
     }
 }
