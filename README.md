@@ -27,13 +27,11 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 This registers the Application class to DI container, and container will instatiate object when it is needed, and it will also remove it.
 If you add it by creating it yourself like this ```.AddSingleton(new Application);``` then you need to remove it also yourself
 
-Sigleton, Scoped, Transient, in this case all are same as everything will live for same lifetime as the program.
-If you need to use Factory method that creates objects that have been registered to container. Then you can use correct lifetime scopes for those classes.
-Also in ASP.NET Core API services you need to take care to use proper lifetime.
+Possible scopes are Sigleton, Scoped and Transient.
 
 ```var app = host.Services.GetService<Application>();```  
 
-Gets the Application instance that DI has created and if those classes have any dependences that they require they will be inject also into those objects. 
+Gets the Application instance that DI creates and if those classes have any dependences that they require they will also created and be injected where they are required. 
 
 ```
 class Application
