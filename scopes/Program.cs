@@ -11,7 +11,7 @@ namespace scopes
             var host = CreateHostBuilder(args).Build();
 
             Console.WriteLine("Caller               Function             Singleton                            Scoped                               Transient");
-            // worker1_one worker1_two and  will have same values unless Worker1 is registered as Transient
+            // worker1_one worker1_two and  will have same values unless Workers are registered as Transient
             Console.Write("Worker1 1  ");
             var worker1_one = host.Services.GetService<Worker1>();
             worker1_one.ServiceInjected();
