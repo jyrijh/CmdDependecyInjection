@@ -17,7 +17,6 @@ Static     SerciveInScope    4f1f39e6-a979-4122-a5f5-a2db61b2e367 bf3bbfaa-e924-
 
 When Workers are registered as Transient then each instance will get its own Transient Services
 ```
-Transient
 Caller     Function        Singleton                            Scoped                               Transient
 Worker1 1  ServiceInjected aa3120fc-bd28-4af2-b257-3d4a689f8040 c361adf9-95a8-4c2d-b5dc-2e6bb7f8328f 8d208c6a-2349-45d1-afe0-7688af6fa366
 Worker1 2  ServiceInjected aa3120fc-bd28-4af2-b257-3d4a689f8040 c361adf9-95a8-4c2d-b5dc-2e6bb7f8328f 9b435e56-cf5c-4c90-a5fe-e6c58177a9e4
