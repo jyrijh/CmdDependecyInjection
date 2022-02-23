@@ -18,6 +18,7 @@ From commandline we provide Worker:Setting3 with valeu "From commandline"
 open project folder in command line and run following commands
 ```
 set Worker:Setting2=From environment variable
+set Worker:Setting3=From environment variable
 dotnet run --Worker:Setting3="From commandline"
 ```
 
