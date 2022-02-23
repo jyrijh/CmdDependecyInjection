@@ -14,10 +14,11 @@ You can set these from Environment variables or commandline by giving full path 
 
 ## Environment variables
 In environment variables the is Worker:Setting2 that has value "From environment variable"
+```set Worker:Setting2=From environment variable```
 
 ## Commandline
 From commandline we provide Worker:Setting3 with value "From commandline"
-
+```program.exe --Worker:Setting3="From commandline"```
 open project folder in command line and run following commands
 ```
 set Worker:Setting2=From environment variable
