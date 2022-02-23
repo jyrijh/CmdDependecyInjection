@@ -9,11 +9,14 @@ In appsettings Worker has 3 settings
   "Setting3": "From appsetting.json"
 }
 ```
+You can set these from Environment variables or commandline by giving full path to specific variable using colon as separator  
+```Worker:Setting1```
+
 ## Environment variables
 In environment variables the is Worker:Setting2 that has value "From environment variable"
 
 ## Commandline
-From commandline we provide Worker:Setting3 with valeu "From commandline"
+From commandline we provide Worker:Setting3 with value "From commandline"
 
 open project folder in command line and run following commands
 ```
