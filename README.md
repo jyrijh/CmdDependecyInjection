@@ -27,7 +27,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 This registers the Application class to DI container, and container will instatiate object when it is needed, and it will also remove it.
 If you add it by creating it yourself like this ```.AddSingleton(new Application);``` then you need to remove it also yourself
 
-Possible scopes are Sigleton, Scoped and Transient.
+Possible scopes are Sigleton, Scoped and Transient ([see](https://github.com/jyrijh/CmdDependecyInjection/tree/master/scopes#scopes)).
 
 ```var app = host.Services.GetService<Application>();```  
 
