@@ -18,27 +18,28 @@ namespace scopes
 
         internal void ServiceInjected()
         {
-            Console.WriteLine("ServiceInjected");
-            Console.WriteLine($"singleton: {_singleton.Id}");
-            Console.WriteLine($"scoped:    {_scoped.Id}");
-            Console.WriteLine($"transient: {_transient.Id}");
+            Console.Write("ServiceInjected      ");
+            Console.Write($"{_singleton.Id} ");
+            Console.Write($"{_scoped.Id} ");
+            Console.Write($"{_transient.Id} ");
             Console.WriteLine();
         }
 
-        internal static void GetSerciveInFunction(IServiceProvider services)
+        internal static void SerciveInFunction(IServiceProvider services)
         {
             var singleton = services.GetService<Singleton>();
             var scoped = services.GetService<Scoped>();
             var transient = services.GetService<Transient>();
 
-            Console.WriteLine("GetSerciveInFunction");
-            Console.WriteLine($"singleton: {singleton.Id}");
-            Console.WriteLine($"scoped:    {scoped.Id}");
-            Console.WriteLine($"transient: {transient.Id}");
+            Console.Write("Static     ");
+            Console.Write("GetSerciveInFunction ");
+            Console.Write($"{singleton.Id} ");
+            Console.Write($"{scoped.Id} ");
+            Console.Write($"{transient.Id} ");
             Console.WriteLine();
         }
 
-        internal static void GetSerciveInScope(IServiceProvider services)
+        internal static void SerciveInScope(IServiceProvider services)
         {
             using IServiceScope serviceScope = services.CreateScope();
             var provider = serviceScope.ServiceProvider;
@@ -47,10 +48,11 @@ namespace scopes
             var scoped = provider.GetRequiredService<Scoped>();
             var transient = provider.GetRequiredService<Transient>();
 
-            Console.WriteLine("GetSerciveInScope");
-            Console.WriteLine($"singleton: {singleton.Id}");
-            Console.WriteLine($"scoped:    {scoped.Id}");
-            Console.WriteLine($"transient: {transient.Id}");
+            Console.Write("Static     ");
+            Console.Write("GetSerciveInScope    ");
+            Console.Write($"{singleton.Id} ");
+            Console.Write($"{scoped.Id} ");
+            Console.Write($"{transient.Id} ");
             Console.WriteLine();
         }
     }

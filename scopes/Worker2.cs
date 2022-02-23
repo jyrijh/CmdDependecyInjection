@@ -17,10 +17,10 @@ namespace scopes
 
         internal void ServiceInjected()
         {
-            Console.WriteLine("ServiceInjected");
-            Console.WriteLine($"singleton: {_singleton.Id}");
-            Console.WriteLine($"scoped:    {_scoped.Id}");
-            Console.WriteLine($"transient: {_transient.Id}");
+            Console.Write("ServiceInjected      ");
+            Console.Write($"{_singleton.Id} ");
+            Console.Write($"{_scoped.Id} ");
+            Console.Write($"{_transient.Id} ");
             Console.WriteLine();
         }
     }
