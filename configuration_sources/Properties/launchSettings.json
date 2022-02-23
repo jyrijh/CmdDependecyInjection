@@ -2,7 +2,12 @@
   "profiles": {
     "configuration_sources": {
       "commandName": "Project",
-      "commandLineArgs": "--Worker:Setting2=\"From commandline\""
+      "commandLineArgs": "--Worker:Setting3=\"From commandline\"",
+      "environmentVariables": {
+        "Worker:Setting2": "Environment variable",
+        "DOTNET_ENVIRONMENT": "Development",
+        "Worker:Setting3": "Environment variable"
+      }
     }
   }
 }
