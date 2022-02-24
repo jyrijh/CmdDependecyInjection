@@ -1,3 +1,5 @@
 # Basic samples for using DI
-Dependency Injection Samples for Commandline for me learning this
+.NET core Dependency Injection, logging and some other toopis for Commandline use for me learning these.
+
+
 
