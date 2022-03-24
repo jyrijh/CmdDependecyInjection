@@ -54,3 +54,6 @@ _Environment_ comes from Environment variable DOTNET_ENVIRONMENT={Development|St
 
 **ASPNETCORE_ENVIRONMENT overrides DOTNET_ENVIRONMENT.**
 
+Good detailed explanation
+https://docs.microsoft.com/en-us/aspnet/core/fundamentals/environments
+
